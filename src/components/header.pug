@@ -1,0 +1,16 @@
+include mixins
+include variables
+
+header.header
+    .header-block 
+        ul.header-mnu-block 
+            li.header-mnu-item 
+                h3.header-title БАЗА ДАННЫХ:
+            +header-list('Записи', '#')   
+            +header-list('Атрибуты', '#', 'active')
+            +header-list('Словари', '#')
+            +header-list('Выборки','#')      
+        .header-user-wrap
+            .header-user-items
+                p #{user}    
+                a(class="header-exit-link" href="#")    

@@ -1,0 +1,70 @@
+.side-bar-block {
+    width: 205px;
+    min-width: 205px;
+    box-shadow: 0 -6px 9px 1px #ccc;
+    min-height: 100vh;
+    background-color: $color-twilight-blue;
+}
+
+.side-bar-logo {
+    background-color: $color-white;
+    background-color: #fff;
+    display: flex;
+    padding: 10px 12px;
+    box-shadow: 0 0 1px #eee;
+
+    h2{
+        padding-left: 12px;
+    }
+
+}    
+
+.side-bar-parent-item {
+border-bottom: 2px solid $color-white;
+padding: 12px 0;
+
+    h4 {
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $color-dodger-blue;
+        padding: 6px 0 6px 44px;
+
+        .side-bar-icon {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 12px;
+            top: 1px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        @each $bgi in $bgi1, $bgi2, $bgi3, $bgi4, $bgi5, $bgi6 {
+            .side-bar-#{$bgi}-icon {
+                background-image: url('images/#{$bgi}-icon.png');
+            }
+        }
+
+    }
+    .side-bar-child-item {
+
+        &:hover {
+            background-color: $color-dodger-blue;
+        }
+
+        .side-bar-child-link {
+            font-weight: bold;
+            color: $color-fiord;
+            font-weight: bold;
+            display: block;
+            padding: 8px 0 8px 44px;
+        }
+
+    }
+
+    .active {
+        background-color: $color-dodger-blue;
+    }
+    
+}

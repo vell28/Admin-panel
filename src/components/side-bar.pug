@@ -1,0 +1,49 @@
+include mixins
+include variables
+
+block side-bar
+    .side-bar-block
+        ul.side-bar-item-wrap
+            li.side-bar-logo
+                img(src="images/logo.png" alt="logo")
+                h2.side-bar-logo-title #{title}
+            li.side-bar-parent-item
+                h4.side-bar-item-title Корреспонденция  
+                    span.side-bar-email-icon.side-bar-icon 
+                ul
+                    +list('Входящие', '#')
+                    +list('Исходящие', '#')
+                    +list('Черновики', '#')
+            li.side-bar-parent-item
+                h4.side-bar-item-title.project Проекты  
+                    span.side-bar-bag-icon.side-bar-icon 
+                ul
+                    +list('Список', '#')
+                    +list('Шаблоны отчетов', '#')
+                    +list('Конструктор отчетов ', '#') 
+            li.side-bar-parent-item
+                h4.side-bar-item-title Иерархия
+                    span.side-bar-tree-icon.side-bar-icon
+            li.side-bar-parent-item
+                h4.side-bar-item-title База данных 
+                    span.side-bar-data-base-icon.side-bar-icon  
+                ul
+                    +list('Записи', '#', 'active')
+                    +list('Атрибуты', '#')
+                    +list('Словари ', '#')
+                    +list('Выборки ', '#')
+            li.side-bar-parent-item
+                h4.side-bar-item-title Пользователи 
+                    span.side-bar-user-icon.side-bar-icon  
+                ul
+                    +list('Активные', '#')
+                    +list('Архив', '#')
+                    +list('Отчеты ', '#')
+                    +list('Логи ', '#') 
+            li.side-bar-parent-item
+                h4.side-bar-item-title Аналитика
+                    span.side-bar-analitic-icon.side-bar-icon   
+                ul
+                    +list('Статистика', '#')
+                    +list('Шаблоны отчетов', '#')
+                    +list('Конструктор отчетов ', '#')                                            

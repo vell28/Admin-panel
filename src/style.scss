@@ -1,0 +1,20 @@
+@import 'normalize';
+@import 'scss/variables'; 
+@import 'scss/common'; 
+@import 'scss/header'; 
+@import 'scss/side-bar'; 
+@import 'scss/search'; 
+@import 'scss/data-tree'; 
+
+.main-wrap{
+    display: flex;
+    flex-direction: row;
+}
+.left-side-content-wrap {
+    width: 100%;
+}
+.left-side-body-wrap{
+    background-color: $color-solitude;
+    margin-left: 26px;
+    margin-top: 40px;
+}

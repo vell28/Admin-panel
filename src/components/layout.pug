@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru-RU")
+    head
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,700")
+        title
+    body
+        .main-wrap
+            block content 
+                include side-bar
+                .left-side-content-wrap
+                    include header
+                    .left-side-body-wrap
+                        include search
+                        include data-tree
